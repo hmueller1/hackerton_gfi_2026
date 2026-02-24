@@ -6,7 +6,8 @@ Extrahiert strukturierte JSON-Daten aus den PDF-Seiten des Prüfungstermins W25
 mittels pdfplumber (Textextraktion) und der Anthropic API (Strukturierung).
 
 Verwendung:
-  export ANTHROPIC_API_KEY=<your-key>
+  export MODEL_HUB_API_KEY=<your-key>
+  export MODEL_HUB_URL=<your-model-hub-url>
   python src/extract_pruefungsdaten.py --page 1
   python src/extract_pruefungsdaten.py --pages 1-10
   python src/extract_pruefungsdaten.py --all
@@ -15,21 +16,28 @@ Ausgabe: doc/berufe/output/beruf_<NNN>.json
 """
 
 import argparse
+import base64
 import json
 import os
 import re
 import sys
 from pathlib import Path
 
-import anthropic
+import fitz  # PyMuPDF
 import pdfplumber
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
 
 PAGES_DIR = Path("doc/berufe/pages")
 OUTPUT_DIR = Path("doc/berufe/output")
 
-EXTRACTION_PROMPT = """Extrahiere die Prüfungsdaten aus folgendem PDF-Text eines IHK-Prüfungsübersichtsblatts.
+EXTRACTION_PROMPT = """Du erhältst ein Bild einer PDF-Seite sowie den daraus extrahierten Text eines IHK-Prüfungsübersichtsblatts.
+Nutze BEIDES: Das Bild zeigt das exakte Layout mit Tabellen und Spalten, der Text liefert die maschinenlesbaren Werte.
+Bei Widersprüchen zwischen Bild und Text hat das Bild Vorrang.
 
-Gib die Daten als JSON zurück, das genau diesem Schema entspricht:
+Extrahiere die Prüfungsdaten und gib sie als JSON zurück, das genau diesem Schema entspricht:
 {
   "beruf": {
     "beschreibung": "<Name des Ausbildungsberufs ohne Berufsnummer und ohne Klammern>",
@@ -80,20 +88,43 @@ def extract_text_from_pdf(pdf_path: Path) -> str:
     return "\n\n".join(texts)
 
 
-def parse_with_ai(text: str, client: anthropic.Anthropic) -> dict:
-    """Sendet den extrahierten PDF-Text an die Anthropic API zur JSON-Strukturierung."""
-    message = client.messages.create(
-        model="claude-opus-4-5",
-        max_tokens=4096,
+def pdf_to_base64_image(pdf_path: Path, dpi: int = 200) -> str:
+    """Konvertiert die erste Seite einer PDF-Datei in ein Base64-kodiertes PNG."""
+    doc = fitz.open(pdf_path)
+    page = doc[0]
+    mat = fitz.Matrix(dpi / 72, dpi / 72)
+    pix = page.get_pixmap(matrix=mat)
+    png_bytes = pix.tobytes("png")
+    doc.close()
+    return base64.b64encode(png_bytes).decode("utf-8")
+
+
+def parse_with_ai(text: str, image_b64: str, client: OpenAI, model: str) -> dict:
+    """Sendet Text + Bild der PDF-Seite an die Model-Hub-API zur JSON-Strukturierung."""
+    response = client.chat.completions.create(
+        model=model,
+        max_tokens=8192,
+        temperature=0.2,
         messages=[
             {
                 "role": "user",
-                "content": EXTRACTION_PROMPT + text,
+                "content": [
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/png;base64,{image_b64}",
+                        },
+                    },
+                    {
+                        "type": "text",
+                        "text": EXTRACTION_PROMPT + text,
+                    },
+                ],
             }
         ],
     )
 
-    response_text = message.content[0].text.strip()
+    response_text = response.choices[0].message.content.strip()
 
     # Entferne eventuelle Markdown-Codeblöcke
     if response_text.startswith("```"):
@@ -104,7 +135,7 @@ def parse_with_ai(text: str, client: anthropic.Anthropic) -> dict:
 
 
 def process_page(
-    page_num: int, client: anthropic.Anthropic, verbose: bool = True
+    page_num: int, client: OpenAI, model: str, verbose: bool = True
 ) -> dict | None:
     """Verarbeitet eine einzelne PDF-Seite und speichert das extrahierte JSON."""
     pdf_path = PAGES_DIR / f"gesamt-bpue-w25-data_{page_num}.pdf"
@@ -123,7 +154,8 @@ def process_page(
             print(f"  Kein Text extrahierbar aus Seite {page_num}", file=sys.stderr)
             return None
 
-        data = parse_with_ai(text, client)
+        image_b64 = pdf_to_base64_image(pdf_path)
+        data = parse_with_ai(text, image_b64, client, model)
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         output_file = OUTPUT_DIR / f"beruf_{page_num:03d}.json"
@@ -143,9 +175,6 @@ def process_page(
 
     except json.JSONDecodeError as e:
         print(f"  JSON-Fehler bei Seite {page_num}: {e}", file=sys.stderr)
-        return None
-    except anthropic.APIError as e:
-        print(f"  API-Fehler bei Seite {page_num}: {e}", file=sys.stderr)
         return None
     except Exception as e:
         print(f"  Fehler bei Seite {page_num}: {e}", file=sys.stderr)
@@ -199,13 +228,19 @@ Beispiele:
     parser.add_argument("--quiet", "-q", action="store_true", help="Weniger Ausgabe")
     args = parser.parse_args()
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("MODEL_HUB_API_KEY")
     if not api_key:
-        print("Fehler: Umgebungsvariable ANTHROPIC_API_KEY ist nicht gesetzt.", file=sys.stderr)
-        print("Setze sie mit: export ANTHROPIC_API_KEY=<dein-api-key>", file=sys.stderr)
+        print("Fehler: Umgebungsvariable MODEL_HUB_API_KEY ist nicht gesetzt.", file=sys.stderr)
         sys.exit(1)
 
-    client = anthropic.Anthropic(api_key=api_key)
+    base_url = os.environ.get("MODEL_HUB_URL")
+    if not base_url:
+        print("Fehler: Umgebungsvariable MODEL_HUB_URL ist nicht gesetzt.", file=sys.stderr)
+        sys.exit(1)
+
+    model = os.environ.get("MODEL_HUB_MODEL", "claude-sonnet-4-5*")
+
+    client = OpenAI(api_key=api_key, base_url=base_url)
 
     if args.page:
         pages = [args.page]
@@ -220,7 +255,7 @@ Beispiele:
     failed = 0
 
     for page_num in pages:
-        result = process_page(page_num, client, verbose=not args.quiet)
+        result = process_page(page_num, client, model, verbose=not args.quiet)
         if result:
             success += 1
         else:
