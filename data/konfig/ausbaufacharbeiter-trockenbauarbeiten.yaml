@@ -1,0 +1,28 @@
+version: '1.1'
+beruf: ausbaufacharbeiter-trockenbauarbeiten
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen erkannt. Die Spaltenstruktur
+    ist kompakt (endet bei Index 7 'Hilfsmittel'). Die Gewichtungsspalten sind anhand
+    der %-Zeichen in den Rohdaten (Index 5 und 6) klar zugeordnet. Keine ODER-Varianten
+    in der praktischen Prüfung gefunden.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

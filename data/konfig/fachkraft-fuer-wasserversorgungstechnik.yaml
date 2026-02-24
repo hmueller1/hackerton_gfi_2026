@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: fachkraft-fuer-wasserversorgungstechnik
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 1
+      vorgabezeit: 5
+      gewichtungPraktisch: 7
+konfidenz:
+  score: 95
+  begruendung: Layout B eindeutig erkannt (2 Tabellen). Spaltenmapping ist konsistent
+    mit den Headern. Tabelle 0 (schriftlich) weicht leicht vom Standard ab, da Spalten
+    für die Gesamtgewichtung fehlen (Tabelle endet nach 'Gewichtung am Ergebnis' und
+    'Hilfsmittel'). Tabelle 1 nutzt Spalte 1 für Bezeichnungen.
+  unsichereFelder:
+  - gewichtungTeil2 (Spalte fehlt im PDF)
+  - gewichtungGesamt (Spalte fehlt im PDF)
+erstelltAm: '2026-02-24'

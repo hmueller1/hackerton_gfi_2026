@@ -1,0 +1,29 @@
+version: '2.0'
+beruf: chemikant-2
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      prüfungstag: 3
+      uhrzeit: 4
+      vorgabezeit: 5
+      gewichtungGesamt: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 1
+      gewichtungGesamt: 2
+konfidenz:
+  score: 90
+  begruendung: 'Klares Layout B mit zwei separaten Tabellen. Spaltenindizes weichen
+    vom Standard-Beispiel ab (Schriftlich: GewichtungGesamt in Spalte 6 statt 8; Praktisch:
+    GewichtungGesamt in Spalte 2). Praktischer Bereich enthält ''oder'' im Namen,
+    aber keine separate Zeile für Varianten.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

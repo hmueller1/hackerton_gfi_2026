@@ -1,0 +1,236 @@
+{
+  "berufNr": [
+    "2676"
+  ],
+  "beschreibung": "Ausbildungsberuf: Chemielaborant/-in",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "Schriftliche Prüfung Prüfungsbereich/-fach",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "Anzahl der Aufgaben (geb./ungeb.) + Abwahl;",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "WISO, 9905, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "18 gebundene Aufgaben, 3 Abwahl, à 1 Punkt = 15 Punkte",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 100.0,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "6 ungeb. Aufgaben, 1 Abwahl, à 10 Punkte = 50 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": 10.0
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Pflichtqualifikation K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "40 gebundene Aufgaben, 6 Abwahl, 6 abwahlgesperrt",
+          "zeitMinuten": 195,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": 27.5
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 1 (WQ 1) Projekt-Nr. 01 Präparative Chemie: Reaktionstypen und -führung K5-1, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 3 (WQ 3) Projekt-Nr. 03 Durchführen verfahrenstechnischer Arbeiten K5-3, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 4 (WQ 4) Projekt-Nr. 04 Anwenden probenahmetechnischer und analytischer Verfahren K5-4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 5 (WQ 5) Projekt-Nr. 05 Anwenden chromatografischer Verfahren K5-5, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 6 (WQ 6) Projekt-Nr. 06 Anwenden spektroskopischer Verfahren K5-6, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 7 (WQ 7) Projekt-Nr. 07 Durchführen mikrobiologischer Arbeiten K5-7, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Analytische Chemie und WQs Wahlqualifikation 15 (WQ 15) Projekt-Nr. 15 Qualitätsmanagement K5-15, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungebundene Aufgaben, 2 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "weitere Wahlqualifikationen K5-x, grün, werden nicht von PAL angeboten; ggf. sind diese zusätzlich vom Prüfungsausschuss zu entwickeln.",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Prozessorientiertes Arbeiten",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 27.5,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "chemielaborant-2",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:42:37.184598+00:00",
+    "konfigVersion": "1.0"
+  }
+}

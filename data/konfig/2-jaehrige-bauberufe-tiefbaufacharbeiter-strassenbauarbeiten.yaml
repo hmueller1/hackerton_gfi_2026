@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: 2-jaehrige-bauberufe-tiefbaufacharbeiter-strassenbauarbeiten
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    variantenTrenner: oder
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Layout B eindeutig erkannt (2 Tabellen). Spaltenmapping passt exakt
+    auf die Header-Struktur beider Tabellen. Schriftliche Prüfung (Tabelle 0) nutzt
+    Spalte 5 für Binnengewichtung und Spalte 6 für Ergebnisgewichtung. Praktische
+    Prüfung (Tabelle 1) nutzt Spalte 6 für die Gesamtgewichtung.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

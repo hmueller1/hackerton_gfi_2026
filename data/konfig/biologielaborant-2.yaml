@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: Biologielaborant/-in (2677)
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 8
+      gewichtungImBereich: 5
+      gewichtungGesamt: 9
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      gewichtungImBereich: 2
+      vorgabezeit: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 95
+  begruendung: 'Eindeutiges Layout B mit 2 separaten Tabellen. Spaltenindizes in beiden
+    Tabellen klar identifizierbar durch Header und Datenwerte (z.B. %-Zeichen, Zeitformate).
+    Besonderheit: In der schriftlichen Prüfung sind Datum (Col 6) und Uhrzeit (Col
+    7) von der Dauer (Col 8) getrennt.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

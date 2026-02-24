@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: berufskraftfahrer
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 2
+      vorgabezeit: 5
+      gewichtungImBereich: 6
+      gewichtungPraktisch: 7
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen. Die Spaltenindizes
+    weichen leicht vom Standard ab (Schriftlich endet Gewichtung bei Index 6, Praktisch
+    bei Index 7), da 'Hilfsmittel' die letzte Spalte bildet und Gesamtgewichtungen
+    nicht explizit aufgeführt sind. Struktur ist jedoch sehr konsistent.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

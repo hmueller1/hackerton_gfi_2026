@@ -1,0 +1,37 @@
+# Laufzeit-Daten — nie ins Repository
+data/eingang/
+data/archiv/
+data/fehler/
+data/ausgabe/
+data/reports/
+data/konfig/pending/
+data/konfig/archiv/
+data/konfig/clustering/
+
+# Konfigs werden committet (Konfig-Bibliothek ist Projekt-Wissen)
+# data/konfig/*.yaml  ← NICHT ignorieren
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+
+# Umgebungsvariablen
+.env
+.env.local
+
+# Node.js / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# Betriebssystem
+.DS_Store
+Thumbs.db

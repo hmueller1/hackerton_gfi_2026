@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: fachpraktiker-zerspanungsmechanik-fraesmaschinensysteme
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungSchriftlich: 5
+      gewichtungGesamt: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 95
+  begruendung: Layout B eindeutig erkannt (2 separate Tabellen auf Seite 1). Die Spaltenstruktur
+    weicht vom Standard-9-Spalten-Layout ab (nur 8 Spalten). Die Gewichtungsspalten
+    sind anhand der Header eindeutig zuordenbar (Col 5 = Gewichtung im jeweiligen
+    Prüfungsteil, Col 6 = Gesamtergebnis). Keine ODER-Varianten in der praktischen
+    Prüfung gefunden.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

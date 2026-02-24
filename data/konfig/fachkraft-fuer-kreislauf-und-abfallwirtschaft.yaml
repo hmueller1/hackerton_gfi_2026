@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: fachkraft-fuer-kreislauf-und-abfallwirtschaft
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 1
+      vorgabezeit: 5
+      gewichtungImBereich: 6
+      gewichtungPraktisch: 7
+konfidenz:
+  score: 90
+  begruendung: 'Eindeutiges Layout B (zwei separate Tabellen). Schriftliche Tabelle
+    folgt Standardstruktur (Spalten 0,1,4,5,6). Praktische Tabelle weicht leicht ab:
+    Namen der Teilaufgaben stehen in Spalte 1 statt 0 (da Spalte 0 für Zeilen 2+3
+    leer ist).'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

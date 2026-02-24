@@ -1,0 +1,30 @@
+version: '1.1'
+beruf: fachpraktiker-zerspanungsmechanik-drehmaschinensysteme
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungSchriftlich: 5
+      gewichtungGesamt: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 100
+  begruendung: Layout B eindeutig erkannt (2 Tabellen). Spaltenzuordnung entspricht
+    den Tabellen-Headern. Die schriftliche Tabelle hat 8 Spalten (0-7), wobei Spalte
+    5 die Gewichtung innerhalb der schriftlichen Prüfung und Spalte 6 die Gesamtgewichtung
+    enthält. Die praktische Tabelle folgt einer ähnlichen Struktur. Keine ODER-Varianten
+    vorhanden.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

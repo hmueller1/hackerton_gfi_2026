@@ -1,0 +1,31 @@
+version: '2.0'
+beruf: eisenbahner-in-der-zugverkehrssteuerung
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: 7
+      gewichtungGesamt: 8
+  praktisch:
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+      gewichtungTeil2: 7
+konfidenz:
+  score: 90
+  begruendung: 'Layout A identifiziert (1 Tabelle). Spaltenstruktur ist klar (Vorgabezeit=Col
+    4, %-Werte in Cols 5-8). Besonderheit: Die praktische Prüfung (Arbeitsaufgabe)
+    ist nicht als separater Block am Ende, sondern in die Themenbereiche ''Abweichungen''
+    und ''Störungen'' integriert (Zeilen 8 und 12). Das Spaltenmapping ist jedoch
+    konsistent.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

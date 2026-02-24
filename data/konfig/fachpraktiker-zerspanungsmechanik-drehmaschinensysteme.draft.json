@@ -1,0 +1,85 @@
+{
+  "berufNr": [
+    "7542"
+  ],
+  "beschreibung": "Ausbildungsberuf: Fachpraktiker/-in Zerspanungsmechanik Drehmaschinensysteme",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9908, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 3 Abwahl, à 1 Punkt",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 33.3,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 33.3,
+        "teil2": null,
+        "gesamtergebnis": 10.0
+      }
+    },
+    {
+      "name": "Auftragsplanung: K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 33.3,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 33.3,
+        "teil2": null,
+        "gesamtergebnis": 10.0
+      }
+    },
+    {
+      "name": "Fertigungstechnik: K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "35 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 33.3,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 33.3,
+        "teil2": null,
+        "gesamtergebnis": 10.0
+      }
+    },
+    {
+      "name": "Praktischer Arbeitsauftrag mit begleitendem Fachgespräch",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 100.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "fachpraktiker-zerspanungsmechanik-drehmaschinensysteme",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:55:35.169829+00:00",
+    "konfigVersion": "1.0"
+  }
+}

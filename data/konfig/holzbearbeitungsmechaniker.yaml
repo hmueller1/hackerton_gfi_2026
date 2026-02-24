@@ -1,0 +1,27 @@
+version: '1.1'
+beruf: holzbearbeitungsmechaniker
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: 'Eindeutiges Layout B mit zwei separaten Tabellen. Die Spaltenstruktur
+    ist kompakt (weniger Gewichtungsspalten als das Standard-Layout A), aber durch
+    die Header eindeutig zuordenbar. Schriftlich: Tabelle 0, Praktisch: Tabelle 1.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

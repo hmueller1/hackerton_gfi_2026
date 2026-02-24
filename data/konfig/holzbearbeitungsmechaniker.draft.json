@@ -1,0 +1,85 @@
+{
+  "berufNr": [
+    "2595"
+  ],
+  "beschreibung": "Ausbildungsberuf: Holzbearbeitungsmechaniker/-in",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 5 Abwahl, à 1 Punkt",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Fertigungstechnik: K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 ungeb. Aufgaben",
+          "zeitMinuten": 120,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Maschinen- und Anlagentechnik: K5, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 ungeb. Aufgaben",
+          "zeitMinuten": 120,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Arbeitsaufgabe",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 100.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "holzbearbeitungsmechaniker",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T17:01:41.856026+00:00",
+    "konfigVersion": "1.0"
+  }
+}

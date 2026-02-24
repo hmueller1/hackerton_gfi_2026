@@ -1,0 +1,27 @@
+version: '1.1'
+beruf: 3-jaehrige-bauberufe-zimmerer-zimmerin
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 100
+  begruendung: Layout B eindeutig erkannt (2 separate Tabellen auf der Seite). Spaltenstruktur
+    in beiden Tabellen klar und konform mit BPÜ-Standards. Keine ODER-Varianten in
+    der praktischen Prüfung sichtbar.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

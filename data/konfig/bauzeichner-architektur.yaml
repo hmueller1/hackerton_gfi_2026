@@ -1,0 +1,28 @@
+version: '1.1'
+beruf: bauzeichner-architektur
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen. In Tabelle 1 (praktisch)
+    stehen die Aufgabenbezeichnungen untypischerweise in Spalte 1 statt 0, was im
+    Mapping berücksichtigt wurde. Spalte 5 enthält in beiden Tabellen %-Werte.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

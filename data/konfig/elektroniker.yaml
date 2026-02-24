@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: elektroniker
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen erkannt (Index 0 und
+    1). Die Spaltenzuordnung entspricht dem Standard-Schema, jedoch endet die schriftliche
+    Tabelle bei Spalte 7 (Hilfsmittel), sodass Teil-2- und Gesamt-Gewichtungen nicht
+    als separate Spalten existieren. In der praktischen Prüfung keine ODER-Varianten
+    erkannt.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

@@ -1,0 +1,129 @@
+{
+  "berufNr": [
+    "6235"
+  ],
+  "beschreibung": "Ausbildungsberuf: Berufskraftfahrer/-in",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 geb. Aufgaben, 5 Abwahl, à 1 Punkt",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 1 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Betriebliche Planung und Logistik Teil 1 K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "40 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 120,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Betriebliche Planung und Logistik Teil 2 K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "1 Projekt, wahlweise",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Beförderung Teil 1 K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "60 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 120,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Beförderung Teil 2 K5, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "1 Projekt, wahlweise",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Praktische Aufgabe 1",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 60.0,
+        "schriftlichePrüfung": null,
+        "teil2": 60.0,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "berufskraftfahrer",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:39:29.682737+00:00",
+    "konfigVersion": "1.0"
+  }
+}

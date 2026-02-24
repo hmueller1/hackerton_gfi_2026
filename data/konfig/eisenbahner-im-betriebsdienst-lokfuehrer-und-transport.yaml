@@ -1,0 +1,32 @@
+version: '2.0'
+beruf: eisenbahner-im-betriebsdienst-lokfuehrer-und-transport
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      datum: 2
+      uhrzeit: 3
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungTeil2: 6
+      gewichtungGesamt: 7
+  praktisch:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungTeil2: 6
+      gewichtungGesamt: 7
+konfidenz:
+  score: 95
+  begruendung: Layout A erkannt (1 Tabelle). Spaltenzuordnung eindeutig anhand Header-Zeile
+    Z01 und Datenzeilen (Z03, Z06). Spalte 6 enthält direkt die Gewichtung für Teil
+    2, Spalte 7 für Gesamtergebnis. Es wurden keine ODER-Trenn-Zeilen identifiziert.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

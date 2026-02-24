@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: chemielaborant-2
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      gewichtungImBereich: 4
+      vorgabezeit: 7
+      gewichtungGesamt: 8
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      gewichtungImBereich: 2
+      vorgabezeit: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B (zwei Tabellen). Die Spaltenindizes weichen vom
+    Standard-Layout A ab, sind aber durch die Header und Inhalte (%-Werte, Zeitangaben)
+    klar identifizierbar. Keine ODER-Varianten in Tabelle 1 erkannt (sondern Teilaufgaben,
+    die sich zu 100% addieren).
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

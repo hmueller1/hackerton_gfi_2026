@@ -1,0 +1,29 @@
+version: '2.0'
+beruf: chemikant
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil1
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 5
+      gewichtungGesamt: 7
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 100
+  begruendung: Eindeutiges Layout B. 3 Tabellen erkannt. Tabelle 0 (Schriftlich) und
+    Tabelle 1 (Praktisch) sind klar getrennt. Spaltenindizes wurden anhand der Header
+    und Daten (z.B. Position der %-Werte) verifiziert. Keine ODER-Varianten in der
+    praktischen Prüfung gefunden, sondern eine nummerierte Liste von Aufgaben.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

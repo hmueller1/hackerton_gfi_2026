@@ -1,0 +1,85 @@
+{
+  "berufNr": [
+    "2666"
+  ],
+  "beschreibung": "Ausbildungsberuf: Chemielaborant/-in",
+  "prüfungsTyp": "abschlusspruefung-teil1",
+  "prüfungsbereiche": [
+    {
+      "name": "Schriftliche Prüfung Prüfungsbereich/-fach",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "Anzahl der Aufgaben (geb./ungeb.) + Abwahl;",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Allgemeine und Präparative Chemie, Teil A K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "56 gebundene Aufgaben, 8 Abwahl,",
+          "zeitMinuten": 135,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": 17.5,
+        "gesamtergebnis": 17.5
+      }
+    },
+    {
+      "name": "Allgemeine und Präparative Chemie, Teil B K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "12 ungeb. Aufgaben, 2 Abwahl,",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Herstellen und Charakterisieren von Produkten",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 70.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "chemielaborant",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:42:07.629549+00:00",
+    "konfigVersion": "1.0"
+  }
+}

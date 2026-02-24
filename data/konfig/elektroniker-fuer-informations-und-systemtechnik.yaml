@@ -1,0 +1,38 @@
+version: '1.1'
+beruf: elektroniker-fuer-informations-und-systemtechnik
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      prüfungstag: 2
+      uhrzeit: 3
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: 7
+      gewichtungGesamt: 8
+      hilfsmittel: 9
+  praktisch:
+    variantenTrenner: oder
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      prüfungstag: 2
+      uhrzeit: 3
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+      gewichtungTeil2: 7
+      hilfsmittel: 9
+konfidenz:
+  score: 100
+  begruendung: Eindeutiges Layout A (kombinierte Tabelle). Spaltenstruktur entspricht
+    exakt dem Standard-Schema. Praktische Prüfung enthält ODER-Varianten ('oder' in
+    Zeile Z10). Spalte 5 bei praktischer Prüfung enthält Text/Zeiten, Spalte 6 die
+    100% Gewichtung.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

@@ -1,0 +1,31 @@
+version: '1.1'
+beruf: fertigungsmechaniker
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 6
+      gewichtungSchriftlich: 7
+      gewichtungTeil2: 8
+      gewichtungGesamt: 9
+  praktisch:
+    variantenTrenner: oder
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 7
+      gewichtungTeil2: 8
+konfidenz:
+  score: 100
+  begruendung: 'Eindeutiges Layout A (kombinierte Tabelle). Spaltenstruktur klar analysiert:
+    Eine zusätzliche Spalte (Index 5) verschiebt die Gewichtungen im Vergleich zum
+    Standard-Layout um eins nach rechts (Start bei Index 6 statt 5). ODER-Trenner
+    erkannt.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

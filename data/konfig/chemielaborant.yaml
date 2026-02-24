@@ -1,0 +1,27 @@
+version: '1.1'
+beruf: chemielaborant
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil1
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 5
+      gewichtungGesamt: 7
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 100
+  begruendung: Eindeutiges Layout B (zwei separate Tabellen-Objekte im Raw-Input).
+    Spaltenzuordnung ist durch Header und Datenwerte (z.B. '135 min' in Spalte 5,
+    '%' in Spalte 7 bzw. 5/6) klar identifizierbar.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

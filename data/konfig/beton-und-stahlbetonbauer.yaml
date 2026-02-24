@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: beton-und-stahlbetonbauer
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Zwei separate Tabellen (Index 0 und 1) eindeutig identifiziert (= Layout
+    B). Die Spaltenstruktur ist leicht komprimiert (nur 8 statt 9 Spalten), die Zuordnung
+    ist jedoch durch die Header 'Gewichtung innerhalb des Faches' (Col 5) und 'Gewichtung
+    am Ergebnis' (Col 6) semantisch klar.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

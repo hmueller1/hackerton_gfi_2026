@@ -1,0 +1,28 @@
+version: '1.1'
+beruf: gleisbauer
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen (Index 0 und 1). Die
+    Spaltenstruktur ist klar anhand der Header zuordenbar. Schriftliche Prüfung endet
+    bei Spalte 7 (Hilfsmittel), eine separate Spalte für Gesamtergebnis fehlt, was
+    bei diesem Layout vorkommen kann.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

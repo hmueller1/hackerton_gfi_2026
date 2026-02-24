@@ -1,0 +1,123 @@
+{
+  "berufNr": [
+    "2310"
+  ],
+  "beschreibung": "Ausbildungsberuf: Baugeräteführer/-in",
+  "prüfungsTyp": "abschlusspruefung",
+  "prüfungsbereiche": [
+    {
+      "name": "WiSO: 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 5 Abwahl, à 1 Punkt",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technologie K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "60 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 100.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technische Mathematik K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "10 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 70.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Arbeitsplanung Teil 1 K7, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Arbeitsplanung Teil 2 K8, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "5 ungebundene Aufgaben, 0 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Praktische Abschlussprüfung",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 100.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "baugeraetefuehrer",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:37:12.710680+00:00",
+    "konfigVersion": "1.0"
+  }
+}

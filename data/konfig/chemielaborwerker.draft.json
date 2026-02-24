@@ -1,0 +1,104 @@
+{
+  "berufNr": [
+    "2650"
+  ],
+  "beschreibung": "Ausbildungsberuf: Chemielaborwerker/-in (Chemielaborjungwerker/-in)",
+  "prüfungsTyp": "abschlusspruefung",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9996, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 geb. Aufgaben, 3 Abwahl, à 1 Punkt",
+          "zeitMinuten": 30,
+          "gewichtungImBereich": 100.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 10.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technologie (Fachkunde I): K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "60 geb. Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 75,
+          "gewichtungImBereich": 66.7,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 60.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Labortechnik (Fachkunde II): K7, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "30 geb. Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 33.3,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Techn. Mathematik (Fachrechnen): K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "10 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 10 Punkte",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 71.4,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 30.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "1. Präparative Arbeit",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 40.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "chemielaborwerker",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:43:16.979829+00:00",
+    "konfigVersion": "1.0"
+  }
+}

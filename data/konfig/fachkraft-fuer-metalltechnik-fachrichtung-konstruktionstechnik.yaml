@@ -1,0 +1,28 @@
+version: '2.0'
+beruf: fachkraft-fuer-metalltechnik-fachrichtung-konstruktionstechnik
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungTeil2: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungTeil2: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B mit zwei separaten Tabellen. Die Spaltenstruktur
+    ist in beiden Tabellen konsistent (Spalte 5 für interne Gewichtung, Spalte 6 für
+    Ergebnis-Gewichtung). Keine ODER-Varianten in der praktischen Prüfung erkannt.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

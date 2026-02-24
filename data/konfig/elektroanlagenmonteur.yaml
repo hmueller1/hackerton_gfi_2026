@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: elektroanlagenmonteur
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: 'Eindeutiges Layout B mit zwei getrennten Tabellen (Index 0 und 1).
+    Spaltenzuordnung ist klar: Spalte 5 enthält interne Gewichtungen, Spalte 6 die
+    Ergebnis-Gewichtung. Keine ODER-Varianten in der praktischen Prüfung, sondern
+    Summierung (Prüfungsstück + Arbeitsproben).'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

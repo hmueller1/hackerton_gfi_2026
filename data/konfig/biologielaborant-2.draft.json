@@ -1,0 +1,191 @@
+{
+  "berufNr": [
+    "2677"
+  ],
+  "beschreibung": "Ausbildungsberuf: Biologielaborant/-in",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "Schriftliche Prüfung Prüfungsbereich/-fach",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "Anzahl der Aufgaben (geb./ungeb.) + Abwahl;",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "WISO, 9905, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "18 gebundene Aufgaben, 3 Abwahl, à 1 Punkt = 15 Punkte",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 100.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": 10.0
+      }
+    },
+    {
+      "name": "Biologische Technologien Molekularbiologisch-biochemische Arbeiten, Teil A K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "32 gebundene Aufgaben, 2 Abwahl, 2 abwahlgesperrt (Nr. 31, 32),",
+          "zeitMinuten": 195,
+          "gewichtungImBereich": 30.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": 27.5
+      }
+    },
+    {
+      "name": "Biologische Technologien Molekularbiologisch-biochemische Arbeiten, Teil B K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 40 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Biologische Technologien Wahlqualifikation Nr. 1 (WQ 1) Projekt-Nr. 01 Durchführen immunologischer und biochemischer Arbeiten K4/K5-1, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "22 gebundene Aufgaben, 2 Abwahl, 1 abwahlgesperrt (Nr. 22),",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 70.0,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 40 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Biologische Technologien Wahlqualifikation Nr. 4 (WQ 4) Projekt-Nr. 04 Durchführen mikrobiologischer Arbeiten II K4/K5-4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "22 gebundene Aufgaben, 2 Abwahl,1 abwahlgesperrt (Nr. 22),",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 40 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Biologische Technologien Wahlqualifikation Nr. 7 (WQ 7) Projekt-Nr. 07 Durchführen toxikologischer Arbeiten K4/K5-7, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "22 gebundene Aufgaben, 2 Abwahl, 1 abwahlgesperrt (Nr. 22),",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 40 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "weitere Wahlqualifikationen K4/K5-x, grün, werden nicht von PAL angeboten; ggf. sind diese zusätzlich vom Prüfungausschuss zu entwickeln.",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Prozessorientiertes Arbeiten",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 27.5,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "biologielaborant-2",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:41:12.801016+00:00",
+    "konfigVersion": "1.0"
+  }
+}

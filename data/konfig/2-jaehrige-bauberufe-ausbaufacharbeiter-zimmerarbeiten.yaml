@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: 2-jaehrige-bauberufe-ausbaufacharbeiter-zimmerarbeiten
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 100
+  begruendung: Layout B eindeutig identifiziert durch zwei separate Tabellen-Indizes
+    in den Rohdaten. Spaltenstruktur weicht leicht vom Standard ab (weniger Spalten),
+    Mapping wurde an die tatsächlichen Rohdaten (Index 0-7) angepasst.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

@@ -1,0 +1,123 @@
+{
+  "berufNr": [
+    "1870"
+  ],
+  "beschreibung": "Ausbildungsberuf: 3-jährige Bauberufe, Zimmerer/Zimmerin",
+  "prüfungsTyp": "abschlusspruefung",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 5 Abwahl, à 1 Punkt;",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Holzkonstruktionen Teil 1: K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufg., 0 Abwahl, à 1 Punkt = 20 Punkte multipliziert mit",
+          "zeitMinuten": 150,
+          "gewichtungImBereich": 30.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 50.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Holzkonstruktionen Teil 2: K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "10 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 100 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 70.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Bauteile Teil 1: K7, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufg., 0 Abwahl, à 1 Punkt = 20 Punkte multipliziert mit",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 30.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 30.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Bauteile Teil 2: K8, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "6 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 60 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 70.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Praktische Aufgabe:",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 100.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "3-jaehrige-bauberufe-zimmerer-zimmerin",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:36:05.535645+00:00",
+    "konfigVersion": "1.0"
+  }
+}

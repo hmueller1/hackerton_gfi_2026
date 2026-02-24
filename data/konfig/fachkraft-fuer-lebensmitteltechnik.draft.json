@@ -1,0 +1,161 @@
+{
+  "berufNr": [
+    "4777"
+  ],
+  "beschreibung": "Ausbildungsberuf: Fachkraft für Lebensmitteltechnik",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 5 Abwahl, à 1 Punkt",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 25.0,
+        "teil2": 25.0,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technik, Projekt 1, Nahrungs- und Genussmittel, K1/K2/P1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "50 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 50 Punkte",
+          "zeitMinuten": 150,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 50.0,
+        "teil2": 50.0,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technik, Projekt 2, Getränkeherstellung, K1/K2/P2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "50 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 50 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Technik, Projekt 3, Tierische Lebensmittel, K1/K2/P3, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "50 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 50 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Qualitätsmanagement, Projekt 1, Nahrungs- und Genussmittel, K4/K5/P1, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 20 Punkte",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 25.0,
+        "teil2": 25.0,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Qualitätsmanagement, Projekt 2, Getränkeherstellung, K4/K5/P2, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 20 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Qualitätsmanagement, Projekt 3, Tierische Lebensmittel, K4/K5/P3, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 20 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": null,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Drei Arbeitsproben (werden von der PAL nicht angeboten!)",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 33.3,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "fachkraft-fuer-lebensmitteltechnik",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:51:22.975453+00:00",
+    "konfigVersion": "1.0"
+  }
+}

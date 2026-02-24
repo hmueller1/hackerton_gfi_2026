@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: fachkraft-im-fahrbetrieb
+berufNr: '6255'
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: 'Eindeutiges Layout B (zwei separate Tabellen mit Indizes 0 und 1).
+    Spaltenstruktur in Tabelle 0 weicht vom Standard ab: Spalte 7 ist ''Hilfsmittel'',
+    nicht ''Gewichtung Teil 2''. Tabelle 1 (praktisch) ist weitgehend leer/informativ
+    (''keine Aufgabenerstellung''), Mapping folgt aber der Header-Struktur.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

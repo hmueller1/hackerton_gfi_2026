@@ -1,0 +1,150 @@
+{
+  "berufNr": [
+    "3080"
+  ],
+  "beschreibung": "Ausbildungsberuf: Elektroniker/-in für Gebäude- und Infrastruktursysteme",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO 9907, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "18 geb. Aufg., 3 Abwahl, à 1 Punkt",
+          "zeitMinuten": 60,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "6 ungeb. Aufg., 1 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": 50.0,
+        "gesamtergebnis": 60.0
+      }
+    },
+    {
+      "name": "Systementwurf Teil A K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "28 geb. Aufg., 3 Abwahl, 8 abwahlgesperrt, à 1 Punkt",
+          "zeitMinuten": 105,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Systementwurf Teil B K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungeb. Aufg., 0 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Funktions- und Systemanalyse Teil A K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "28 geb. Aufg., 3 Abwahl, 8 abwahlgesperrt, à 1 Punkt",
+          "zeitMinuten": 105,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Funktions- und Systemanalyse Teil B K5, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "8 ungeb. Aufg., 0 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Praktische Prüfung",
+      "typ": "praktisch",
+      "varianten": [
+        {
+          "bezeichnung": "Arbeitsaufgabe inkl. situativer Gesprächsphasen",
+          "aufgaben": [],
+          "gewichtung": {
+            "imPrüfungsbereich": 100.0,
+            "schriftlichePrüfung": null,
+            "teil2": null,
+            "gesamtergebnis": null
+          }
+        },
+        {
+          "bezeichnung": "Betrieblicher Auftrag mit auftragsbezogenem Fachgespräch",
+          "aufgaben": [],
+          "gewichtung": {
+            "imPrüfungsbereich": 100.0,
+            "schriftlichePrüfung": null,
+            "teil2": null,
+            "gesamtergebnis": null
+          }
+        }
+      ],
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": 50.0,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "elektroniker-fuer-gebaeude-und-infrastruktursysteme",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:48:32.558463+00:00",
+    "konfigVersion": "1.0"
+  }
+}

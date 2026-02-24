@@ -1,0 +1,33 @@
+version: '1.1'
+beruf: fachkraft-fuer-abwassertechnik
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: null
+      gewichtungGesamt: null
+  praktisch:
+    tabelleIndex: 1
+    variantenTrenner: null
+    spalten:
+      prüfungsbereich: 1
+      vorgabezeit: 5
+      gewichtungPraktisch: 7
+      gewichtungTeil2: null
+konfidenz:
+  score: 90
+  begruendung: 'Eindeutiges Layout B mit zwei separaten Tabellen. Schriftliche Prüfung
+    folgt Standard-Schema (Spalten 0-6). Praktische Prüfung weicht leicht ab: Bezeichnungen
+    stehen in Spalte 1, nicht 0, und es gibt keine ODER-Varianten, sondern eine Aufteilung
+    in 4 Aufgaben à 25%.'
+  unsichereFelder:
+  - prüfungsbereich (Praktisch)
+erstelltAm: '2026-02-24'

@@ -1,0 +1,27 @@
+version: '1.1'
+beruf: chemielaborwerker
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 90
+  begruendung: Eindeutiges Layout B mit zwei getrennten Tabellen. Praktische Prüfung
+    nutzt Spalte 1 als Bezeichner, da Spalte 0 (Gruppenheader) in Folgestrukturen
+    leer ist. Inline-ODER in Z03 erfordert keinen Zeilentrenner.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

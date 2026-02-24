@@ -1,0 +1,28 @@
+version: '1.1'
+beruf: baugeraetefuehrer
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B (zwei separate Tabellen-Objekte). Spaltenstruktur
+    in beiden Tabellen klar durch Header definiert. Keine ODER-Varianten in der praktischen
+    Prüfung gefunden.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

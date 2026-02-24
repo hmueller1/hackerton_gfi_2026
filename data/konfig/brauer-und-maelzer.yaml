@@ -1,0 +1,31 @@
+version: '2.0'
+beruf: brauer-und-maelzer
+erstelltDurch: manuell
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      gewichtungImBereich: 3
+      prüfungstag: 4
+      uhrzeit: 5
+      vorgabezeit: 6
+      gewichtungGesamt: 7
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      gewichtungImBereich: 2
+      vorgabezeit: 5
+      gewichtungGesamt: 6
+konfidenz:
+  score: 95
+  begruendung: Eindeutiges Layout B (zwei Tabellen). Die Spaltenindizes weichen vom
+    Standard-Layout A ab (z.B. Gewichtung im Bereich in Spalte 3 statt 5 bei schriftlich),
+    wurden aber exakt anhand der Rohdaten ('100%', '35%') kartiert.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

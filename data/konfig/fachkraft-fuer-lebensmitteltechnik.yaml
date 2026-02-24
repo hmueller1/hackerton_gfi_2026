@@ -1,0 +1,27 @@
+version: '1.1'
+beruf: fachkraft-fuer-lebensmitteltechnik
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 5
+      gewichtungSchriftlich: 7
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Layout B eindeutig identifiziert (zwei separate Tabellen-Indizes).
+    Spaltenstruktur in Tabelle 0 weicht leicht vom Standard ab (zusätzliche Zeit-Spalte
+    auf Index 6), Mapping wurde entsprechend auf Index 7 für Gewichtung angepasst.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

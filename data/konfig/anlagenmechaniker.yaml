@@ -1,0 +1,43 @@
+# Konfig: anlagenmechaniker
+# Version: 1.1 | Erstellt: 2026-02-24 | Durch: manuell
+# Layout-Typ: A (Abschlussprüfung Teil 2, 1 Tabelle, ODER-Varianten praktisch)
+# Referenz-PDF: gesamt-bpue-w25-data_1.pdf
+# Hinweis: pdfplumber erkennt NUR 1 Tabelle pro Seite — schriftlich und praktisch
+#           sind in derselben Tabelle, getrennt durch "Praktische Prüfung"-Subheader.
+
+version: "1.1"
+beruf: "anlagenmechaniker"
+erstelltDurch: "manuell"
+prüfungsTyp: "abschlusspruefung-teil2"
+
+# Auf welcher Seite des PDFs liegen die Daten? (1-basiert)
+seite: 1
+
+tabellenMapping:
+  # Beide Prüfungsabschnitte in 1 Tabelle (Index 0)
+  tabelleIndex: 0
+
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0       # "WISO", "Auftrags- und Funktionsanalyse..."
+      aufgaben: 1              # "18 geb. Aufg., ..."
+      prüfungstag: 2
+      uhrzeit: 3
+      vorgabezeit: 4           # "60 Min", "105 Min"
+      gewichtungImBereich: 5   # Gewichtung im Prüfungsbereich (40%, 60%)
+      gewichtungSchriftlich: 6 # Gewichtung am Ergebnis der schriftlichen Prüfung
+      gewichtungTeil2: 7       # Gewichtung am Ergebnis im Teil 2
+      gewichtungGesamt: 8      # Gewichtung am Gesamtergebnis
+
+  praktisch:
+    # ODER-Trenner: Zeile mit "oder" trennt die Varianten
+    variantenTrenner: "oder"
+    spalten:
+      prüfungsbereich: 0       # "Praktische Aufgabe...", "Betrieblicher Auftrag..."
+      phasen: 1                # "Vorbereitung / Information und Planung / ..."
+      prüfungstag: 2
+      uhrzeit: 3
+      vorgabezeit: 4           # "14 Std.", "18 Std."
+      # col5 = Phasenzeitdetails (z.B. "8 Std. Vorbereitung") — kein Gewichtungswert
+      gewichtungPraktisch: 6   # Gewichtung am Ergebnis der praktischen Prüfung
+      gewichtungTeil2: 7       # Gewichtung am Ergebnis im Teil 2

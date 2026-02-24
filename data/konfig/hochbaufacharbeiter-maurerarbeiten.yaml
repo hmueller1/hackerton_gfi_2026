@@ -1,0 +1,32 @@
+version: '1.1'
+beruf: hochbaufacharbeiter-maurerarbeiten
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: null
+      gewichtungGesamt: null
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungPraktisch: 6
+      gewichtungTeil2: null
+      gewichtungGesamt: null
+konfidenz:
+  score: 98
+  begruendung: Eindeutiges Layout B. Zwei separate Tabellen im Rohtext identifiziert
+    (Index 0 und Index 1). Spaltenstruktur ist klar definiert und entspricht den Header-Bezeichnungen.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

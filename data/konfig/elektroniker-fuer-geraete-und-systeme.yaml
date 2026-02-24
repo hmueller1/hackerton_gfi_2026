@@ -1,0 +1,31 @@
+version: '1.1'
+beruf: elektroniker-fuer-geraete-und-systeme
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: 7
+      gewichtungGesamt: 8
+  praktisch:
+    variantenTrenner: oder
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+      gewichtungTeil2: 7
+konfidenz:
+  score: 100
+  begruendung: 'Layout A eindeutig identifiziert (nur 1 Tabelle). Die Spaltenstruktur
+    ist sehr sauber und entspricht dem Standard-Schema: Spalte 0 für Bezeichnungen,
+    Spalte 4 für Zeit, Spalten 5-8 für Gewichtungen. Die ''oder''-Trennlinie ist klar
+    in Zeile 10 vorhanden.'
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

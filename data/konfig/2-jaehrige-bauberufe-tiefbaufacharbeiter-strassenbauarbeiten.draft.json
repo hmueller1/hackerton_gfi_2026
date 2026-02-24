@@ -1,0 +1,123 @@
+{
+  "berufNr": [
+    "1851"
+  ],
+  "beschreibung": "Ausbildungsberuf: 2-jährige Bauberufe, Tiefbaufacharbeiter/-in Straßenbauarbeiten",
+  "prüfungsTyp": "abschlusspruefung",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9996, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 geb. Aufgaben, 3 Abwahl, à 1 Punkt",
+          "zeitMinuten": 30,
+          "gewichtungImBereich": 100.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Schwerpunktbezogene Aufgaben Teil 1: K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Schwerpunktbezogene Aufgaben Teil 2: K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "6 ungeb. Aufg., 0 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Bauwerke im Tiefbau Teil 1: K7, gelb",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Bauwerke im Tiefbau Teil 2 K8, gelb:",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "6 ungeb. Aufg., 0 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Praktische Aufgabe:",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": 100.0,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "2-jaehrige-bauberufe-tiefbaufacharbeiter-strassenbauarbeiten",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:35:11.412148+00:00",
+    "konfigVersion": "1.0"
+  }
+}

@@ -1,0 +1,28 @@
+version: '1.1'
+beruf: hochbaufacharbeiter-beton-und-stahlbetonarbeiten
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung
+seite: 1
+tabellenMapping:
+  schriftlich:
+    tabelleIndex: 0
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+  praktisch:
+    tabelleIndex: 1
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+konfidenz:
+  score: 95
+  begruendung: Layout B eindeutig erkannt (2 Tabellen auf der Seite). Spaltenstruktur
+    weicht leicht vom 8-Spalten-Standard ab (keine expliziten Spalten für Teil 2 /
+    Gesamtgewichtung am Ende), aber die relevanten Spalten 0-6 sind durch Header und
+    %-Werte klar identifizierbar. Keine ODER-Varianten in der praktischen Prüfung.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'

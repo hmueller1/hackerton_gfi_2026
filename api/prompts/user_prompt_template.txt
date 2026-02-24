@@ -1,0 +1,109 @@
+## Aufgabe: YAML-Konfig für Beruf "{beruf}" generieren
+
+Seiten im PDF: {seitenanzahl} | **Tabellen auf Seite 1 gefunden: {anzahl_tabellen}**
+→ Empfohlener Layout-Typ: **{layout_hinweis}**
+
+---
+
+## Tabellendaten aus dem PDF (Rohinhalt von pdfplumber)
+
+{tabellen_rohinhalt}
+
+---
+
+## Ziel-JSON-Schema (Referenz — was die Konfig erzeugen soll)
+
+```json
+{{
+  "berufNr": ["4010", "4011"],
+  "beschreibung": "Ausbildungsberuf: Anlagenmechaniker/-in",
+  "prüfungsTyp": "abschlusspruefung-teil2",
+  "prüfungsbereiche": [
+    {{
+      "name": "WISO 9905",
+      "typ": "schriftlich",
+      "aufgaben": [
+        {{"bezeichnung": "18 geb. Aufg.", "zeitMinuten": 60, "gewichtungImBereich": 40.0}},
+        {{"bezeichnung": "6 ungeb. Aufg.", "zeitMinuten": null, "gewichtungImBereich": 60.0}}
+      ],
+      "gewichtung": {{
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": 50.0,
+        "gesamtergebnis": 60.0
+      }}
+    }},
+    {{
+      "name": "Praktische Prüfung",
+      "typ": "praktisch",
+      "varianten": [
+        {{
+          "bezeichnung": "Praktische Aufgabe mit Fachgespräch",
+          "gewichtung": {{"imPrüfungsbereich": 100.0}}
+        }},
+        {{
+          "bezeichnung": "Betrieblicher Auftrag mit Fachgespräch",
+          "gewichtung": {{"imPrüfungsbereich": 100.0}}
+        }}
+      ],
+      "gewichtung": {{"teil2": 50.0}}
+    }}
+  ]
+}}
+```
+
+---
+
+## Beispiel-Konfig (Anlagenmechaniker — Layout-Typ A, 1 Tabelle mit ODER-Varianten)
+
+```yaml
+version: "1.0"
+beruf: "anlagenmechaniker"
+erstelltDurch: "ki"
+prüfungsTyp: "abschlusspruefung-teil2"
+seite: 1
+
+tabellenMapping:
+  # 1 Tabelle enthält beide Abschnitte (schriftlich + praktisch)
+  tabelleIndex: 0
+
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0       # Zeile mit nicht-leerem Bereichsnamen = neuer Bereich
+      aufgaben: 1              # Aufgabenbeschreibung (Anzahl, Art, Punkte)
+      vorgabezeit: 4           # z.B. "60 Min", "105 Min"
+      gewichtungImBereich: 5   # Gewichtung innerhalb des Bereichs (40%, 60%)
+      gewichtungSchriftlich: 6 # Gewichtung am Ergebnis der schriftlichen Prüfung
+      gewichtungTeil2: 7       # Gewichtung am Ergebnis im AP Teil 2
+      gewichtungGesamt: 8      # Gewichtung am Gesamtergebnis
+
+  praktisch:
+    variantenTrenner: "oder"   # Zeile mit "oder" trennt ODER-Varianten
+    spalten:
+      prüfungsbereich: 0       # Bezeichnung der praktischen Aufgabe / Variante
+      vorgabezeit: 4           # z.B. "14 Std.", "18 Std."
+      # col 5 enthält hier oft Phasendetails, kein %-Wert
+      gewichtungPraktisch: 6   # Gewichtung am Ergebnis der praktischen Prüfung
+      gewichtungTeil2: 7       # Gewichtung am Ergebnis im AP Teil 2
+
+konfidenz:
+  score: 95
+  begruendung: "Typisches Layout-Typ-A. Spaltenstruktur klar erkennbar. ODER-Varianten vorhanden."
+  unsichereFelder: []
+```
+
+---
+
+## Deine Aufgabe
+
+Analysiere die Tabellendaten oben für den Beruf **"{beruf}"** und generiere die passende YAML-Konfig.
+
+**WICHTIG — Layout-Typ Entscheidung:**
+Es wurden **{anzahl_tabellen} Tabelle(n)** erkannt → {layout_hinweis}
+
+Beachte:
+1. Welche Spalte enthält Gewichtungswerte in Prozent (enden auf %)?
+2. Gibt es ODER-Varianten in der praktischen Prüfung?
+3. Weicht die Spaltenstruktur vom Anlagenmechaniker-Beispiel ab?
+
+Antworte NUR mit dem YAML-Block (```yaml ... ```), kein weiterer Text davor oder danach.

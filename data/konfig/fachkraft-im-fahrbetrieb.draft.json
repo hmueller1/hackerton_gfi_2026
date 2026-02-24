@@ -1,0 +1,129 @@
+{
+  "berufNr": [
+    "6255"
+  ],
+  "beschreibung": "Ausbildungsberuf: Fachkraft im Fahrbetrieb",
+  "prüfungsTyp": "abschlusspruefung",
+  "prüfungsbereiche": [
+    {
+      "name": "WISO: 9994, K10, blau",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 geb. Aufgaben, 5 Abwahl, à 1 Punkt",
+          "zeitMinuten": 45,
+          "gewichtungImBereich": 60.0,
+          "punkte": null
+        },
+        {
+          "bezeichnung": "4 ungeb. Aufgaben, 1 Abwahl, à 10 Punkte",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 40.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 20.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Personenverkehr und Beförderungsleistungen Teil 1 K1, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Personenverkehr und Beförderungsleistungen Teil 2 K2, weiß",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "14 ungebundene Aufgaben, 4 Abwahlen à 10",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Planung und Disposition des Fahrbetriebes Teil 1: K4, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "25 gebundene Aufgaben, 0 Abwahl, à 1 Punkt",
+          "zeitMinuten": 90,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": 40.0,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "Planung und Disposition des Fahrbetriebes Teil 2: K5, grün",
+      "typ": "schriftlich",
+      "varianten": null,
+      "aufgaben": [
+        {
+          "bezeichnung": "14 ungebundene Aufgaben, 4 Abwahlen à 10",
+          "zeitMinuten": null,
+          "gewichtungImBereich": 50.0,
+          "punkte": null
+        }
+      ],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    },
+    {
+      "name": "keine Aufgabenerstellung durch PAL",
+      "typ": "praktisch",
+      "varianten": null,
+      "aufgaben": [],
+      "gewichtung": {
+        "imPrüfungsbereich": null,
+        "schriftlichePrüfung": null,
+        "teil2": null,
+        "gesamtergebnis": null
+      }
+    }
+  ],
+  "metadaten": {
+    "beruf": "fachkraft-im-fahrbetrieb",
+    "jahr": 0,
+    "quelldatei": "dry-run",
+    "verarbeitetAm": "2026-02-24T16:55:05.778788+00:00",
+    "konfigVersion": "1.0"
+  }
+}

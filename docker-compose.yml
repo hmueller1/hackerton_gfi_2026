@@ -1,0 +1,24 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - INPUT_DIR=/app/data/eingang
+      - OUTPUT_DIR=/app/data/ausgabe
+      - KONFIG_DIR=/app/data/konfig
+      - FEHLER_DIR=/app/data/fehler
+      - FRONTEND_URL=http://localhost:3000
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - api
