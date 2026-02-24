@@ -20,14 +20,15 @@ You are the **Spec-Driven Development (SDD)** assistant for this repository. Alw
 ## 2) Repository Settings (managed by /setupSpecs)
 
 ```yaml
-DocLanguage: English # default; /setupSpecs may change this
-LastUpdated: '2026-02-06'
+DocLanguage: German
+LastUpdated: '2026-02-24'
 ```
 
 ## 3) Goal / Scope
 
-- Primary goal: provide a clean **Spec-Driven Development** workflow powered by GitHub Copilot in VS Code.
-- Scope includes: spec documents, architecture snapshot, Memory Bank maintenance, and code generation aligned to style rules.
+- Primary goal: **Data-Dobby** — unterschiedlich strukturierte Prüfungsdaten (PDF) einlesen, in ein einheitliches Format normalisieren und über eine HTTP-REST-API bereitstellen.
+- Zielgruppe: interne Entwickler und andere Backend-Systeme.
+- Scope: Ingestion (PDF-Parsing), Normalization (einheitliches Datenmodell), HTTP-API (NestJS).
 
 ## 4) Style & Output Preferences (MUST MAINTAIN)
 
@@ -47,6 +48,9 @@ If a user asks to have existing code **rewritten** or **written differently** (f
 
 - **Comments**: Do not add comments in generated code unless explicitly requested.
 - **Formatting**: Follow the project's formatter / linter configuration when present.
+- **Style**: Funktionaler Stil bevorzugt — pure functions und immutable data structures wo möglich.
+- **TypeScript**: Strict mode; keine `any`-Typen.
+- **Paketmanager**: Immer `pnpm` verwenden — niemals `npm` oder `yarn`.
 
 ## 5) Architecture & Design Snapshot (MUST SYNC)
 
@@ -62,13 +66,24 @@ At the start of tasks that create/move/delete files or change module boundaries,
 
 ```yaml
 architecture:
-  style: 'TBD'
+  style: 'Layered Monolith'
   entrypoints:
-    - 'TBD'
-  modules: []
-  shared: []
+    - 'HTTP REST API (NestJS) — Port 3000'
+  modules:
+    - 'ingestion: PDF-Dateien einlesen, Rohtext extrahieren, KI-Parsing (externer OpenAI-kompatibler Dienst), Startup-Trigger'
+    - 'normalization: Rohdaten in einheitliches Prüfungsdaten-Schema transformieren (rein funktional)'
+    - 'persistence: Normalisierte Beruf-Objekte in MongoDB speichern und abfragen'
+    - 'api: HTTP-Endpunkte zur Abfrage normalisierter Prüfungsdaten'
+  shared:
+    - 'domain: gemeinsame TypeScript-Interfaces und DTOs (Beruf, PrüfungsBereich, Aufgabe, Termin)'
+  external:
+    - 'KI-Dienst: https://adesso-ai-hub.3asabc.de/v1, Modell claude-sonnet-4-6* (API-Key via AI_HUB_API_KEY)'
+    - 'MongoDB: URI via MONGODB_URI'
   boundaries:
-    - 'TBD'
+    - 'Ingestion-Layer hat keinen direkten HTTP-Zugriff'
+    - 'API-Layer greift nur auf persistierte/normalisierte Daten zu, nie auf Rohdaten'
+    - 'Normalization-Layer ist rein funktional (keine Seiteneffekte, keine I/O)'
+    - 'Secrets ausschließlich über Umgebungsvariablen — nie im Code'
 ```
 
 ## 6) Memory Bank (SDD Working Set)
