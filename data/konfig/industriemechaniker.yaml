@@ -1,0 +1,29 @@
+version: '1.1'
+beruf: industriemechaniker
+erstelltDurch: ki
+prüfungsTyp: abschlusspruefung-teil2
+seite: 1
+tabellenMapping:
+  tabelleIndex: 0
+  schriftlich:
+    spalten:
+      prüfungsbereich: 0
+      aufgaben: 1
+      vorgabezeit: 4
+      gewichtungImBereich: 5
+      gewichtungSchriftlich: 6
+      gewichtungTeil2: 7
+      gewichtungGesamt: 8
+  praktisch:
+    variantenTrenner: oder
+    spalten:
+      prüfungsbereich: 0
+      vorgabezeit: 4
+      gewichtungPraktisch: 6
+      gewichtungTeil2: 7
+konfidenz:
+  score: 100
+  begruendung: Eindeutiges Layout A. Alle Spaltenindizes konnten anhand der Rohdaten
+    zweifelsfrei zugeordnet werden. Trenner 'oder' für praktische Varianten vorhanden.
+  unsichereFelder: []
+erstelltAm: '2026-02-24'
