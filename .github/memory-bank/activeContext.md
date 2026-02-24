@@ -1,7 +1,7 @@
 # Aktiver Kontext — Data-Dobby
 
 ## Aktueller Fokus
-PDF-Ingestion + Normalisierung implementiert. Nächster Schritt: HTTP-API-Endpunkte für `/berufe`.
+HTTP-API-Layer (`GET /berufe`, `GET /berufe/:id`) implementiert und getestet. Nächster Schritt: Spec `manuelle-pruefung-review-workflow.md` umsetzen.
 
 ## Status
 - NestJS-Projektgerüst lauffähig (`pnpm build` ✓, `pnpm test` ✓).
@@ -24,7 +24,17 @@ PDF-Ingestion + Normalisierung implementiert. Nächster Schritt: HTTP-API-Endpun
 - `src/ingestion/ingestion.service.ts`: Startup-Trigger, sequenzielle Verarbeitung, Dedup, Fehler-Logging.
 - `src/ingestion/ingestion.module.ts`: Importiert `PersistenceModule` + `ConfigModule`.
 
+## Letzte Änderungen (aktuell)
+- `src/persistence/beruf.repository.ts`: `findAll()` und `findById()` ergänzt.
+- `src/api/beruf-api.service.ts` (neu): `BerufApiService` mit `findAll()`, `findById()`, `vonDatum`-Validierung (`YYYY-MM-DD`) und reiner Filterfunktion `filterBereiche()`.
+- `src/api/beruf-api.controller.ts` (neu): `@Controller('berufe')` mit `GET /berufe` und `GET /berufe/:id`.
+- `src/api/api.module.ts`: `PersistenceModule` importiert, `BerufApiService` + `BerufApiController` registriert.
+- `src/api/beruf-api.service.spec.ts` (neu): 7 Unit-Tests (Datumsfilterung, 404, 400); alle grün.
+- Spec `api-berufe-endpunkte.md` → Status `Implemented`, nach `done/` verschoben.
+
 ## Nächste Schritte
-1. API-Modul implementieren: `GET /berufe`, `GET /berufe/:id`.
-2. `/specify` für HTTP-API-Endpunkte aufrufen.
-3. End-to-End-Test mit echten Umgebungsvariablen durchführen.
+1. Spec `manuelle-pruefung-review-workflow.md` (backlog) planen und umsetzen:
+   - `status`-Feld ins Mongoose-Schema.
+   - `ReviewModule` mit Endpunkten implementieren.
+   - Minimal-Frontend unter `/review/ui` ausliefern.
+2. End-to-End-Test mit echten Umgebungsvariablen (`MONGODB_URI`, `AI_HUB_API_KEY`) durchführen.

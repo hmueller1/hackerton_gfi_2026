@@ -22,7 +22,10 @@ Vor dem Verarbeiten prüft `BerufRepository.existsByFilename()`, ob ein Dokument
 Rohtext → KI-Dienst (OpenAI-kompatibler Endpunkt) → JSON-Antwort → AJV-Schema-Validierung → typisiertes `BerufDocument` oder `null`.
 
 ### Repository-Pattern
-`BerufRepository` abstrahiert MongoDB-Zugriff. Einzige öffentliche Methoden: `existsByFilename()` und `save()`.
+`BerufRepository` abstrahiert MongoDB-Zugriff. Öffentliche Methoden: `existsByFilename()`, `save()`, `findAll()`, `findById()`.
+
+### API-Service-Pattern (Datumsfilterung)
+Die `vonDatum`-Filterung ist als reine Funktion (`filterBereiche`) außerhalb der Service-Klasse implementiert. Sie filtert `PruefungsBereich[]` auf Aufgaben mit `termin.datum >= vonDatum` und entfernt leere Bereiche. Validierung des Datumsformats (`YYYY-MM-DD`) erfolgt per Regex in einer separaten reinen Funktion vor dem Repository-Zugriff. Fehler werden als NestJS-Exceptions (`BadRequestException`, `NotFoundException`) geworfen — keine Custom-Exception-Klassen.
 
 ## Schicht-Grenzen
 | Schicht | Darf zugreifen auf | Darf NICHT zugreifen auf |

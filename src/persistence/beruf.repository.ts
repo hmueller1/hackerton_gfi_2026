@@ -19,4 +19,12 @@ export class BerufRepository {
   async save(filename: string, doc: BerufDocument): Promise<void> {
     await this.model.create({ filename, beruf: doc.beruf });
   }
+
+  async findAll(): Promise<BerufeDocument[]> {
+    return this.model.find().exec();
+  }
+
+  async findById(id: string): Promise<BerufeDocument | null> {
+    return this.model.findById(id).exec();
+  }
 }
