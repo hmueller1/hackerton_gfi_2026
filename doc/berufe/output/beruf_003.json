@@ -1,0 +1,94 @@
+{
+  "beruf": {
+    "beschreibung": "2-jährige Bauberufe, Ausbaufacharbeiter/-in Zimmerarbeiten",
+    "berufNr": [1841],
+    "prüfungsBereich": [
+      {
+        "name": "Wirtschafts- und Sozialkunde",
+        "aufgaben": [
+          {
+            "name": "Schriftliche Aufgabenstellungen",
+            "struktur": "25 geb. Aufgaben, 3 Abwahl, à 1 Punkt = 22 Punkte multipliziert mit Faktor 4,55 = 100 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "08:00",
+              "uhrzeitbis": "08:30",
+              "dauer": 30
+            },
+            "hilfmittel": "keine"
+          }
+        ]
+      },
+      {
+        "name": "Schwerpunkt Zimmerarbeiten",
+        "aufgaben": [
+          {
+            "name": "Teil 1",
+            "struktur": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 20 Punkte multipliziert mit Faktor 2,0 = 40 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "09:00",
+              "uhrzeitbis": "10:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Teil 2",
+            "struktur": "6 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 60 Punkte multipliziert mit Faktor 1,0 = 60 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "09:00",
+              "uhrzeitbis": "10:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          }
+        ]
+      },
+      {
+        "name": "Bauwerke im Ausbau",
+        "aufgaben": [
+          {
+            "name": "Teil 1",
+            "struktur": "20 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 20 Punkte multipliziert mit Faktor 2,0 = 40 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "11:00",
+              "uhrzeitbis": "12:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Teil 2",
+            "struktur": "6 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 60 Punkte multipliziert mit Faktor 1,0 = 60 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "11:00",
+              "uhrzeitbis": "12:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          }
+        ]
+      },
+      {
+        "name": "Praktische Prüfung",
+        "aufgaben": [
+          {
+            "name": "Praktische Aufgabe: 1 Arbeitsplanung, 1 praktische Aufgabe",
+            "struktur": "1 Arbeitsplanung Richtzeit 30 Min., 1 praktische Aufgabe Richtzeit 6 Std. 30 Min., insgesamt 7 Std.",
+            "termin": {
+              "datum": "TBD",
+              "uhrzeitvon": "00:00",
+              "uhrzeitbis": "00:00",
+              "dauer": 420
+            },
+            "hilfmittel": "nach Bereitstellungsliste für den Ausbildungsbetrieb"
+          }
+        ]
+      }
+    ]
+  }
+}

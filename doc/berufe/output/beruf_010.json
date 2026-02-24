@@ -1,0 +1,154 @@
+{
+  "beruf": {
+    "beschreibung": "Bauzeichner/-in, Architektur",
+    "berufNr": [2106],
+    "prüfungsBereich": [
+      {
+        "name": "Wirtschafts- und Sozialkunde",
+        "aufgaben": [
+          {
+            "name": "Schriftliche Aufgabenstellungen",
+            "struktur": "25 geb. Aufgaben, 5 Abwahl, à 1 Punkt = 20 Punkte multipliziert mit Faktor 3,0 = 60 Punkte und 4 ungeb. Aufgaben, 1 Abwahl, à 10 Punkte = 30 Punkte dividiert durch Divisor 0,75 = 40 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "08:00",
+              "uhrzeitbis": "08:45",
+              "dauer": 45
+            },
+            "hilfmittel": "keine"
+          }
+        ]
+      },
+      {
+        "name": "Bereich a) Baueingabe",
+        "aufgaben": [
+          {
+            "name": "Teil 1",
+            "struktur": "15 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 15 Punkte dividiert durch Divisor 0,45 = 33,3 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "09:00",
+              "uhrzeitbis": "10:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Teil 2",
+            "struktur": "10 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 100 Punkte dividiert durch Divisor 1,5 = 66,6 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "09:00",
+              "uhrzeitbis": "10:30",
+              "dauer": 90
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          }
+        ]
+      },
+      {
+        "name": "Bereich b) Rohbau",
+        "aufgaben": [
+          {
+            "name": "Teil 1",
+            "struktur": "15 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 15 Punkte dividiert durch Divisor 0,45 = 33,3 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "10:45",
+              "uhrzeitbis": "12:00",
+              "dauer": 75
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Teil 2",
+            "struktur": "7 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 70 Punkte dividiert durch Divisor 1,05 = 66,6 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "10:45",
+              "uhrzeitbis": "12:00",
+              "dauer": 75
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          }
+        ]
+      },
+      {
+        "name": "Bereich c) Ausbau",
+        "aufgaben": [
+          {
+            "name": "Teil 1",
+            "struktur": "15 geb. Aufgaben, 0 Abwahl, à 1 Punkt = 15 Punkte dividiert durch Divisor 0,45 = 33,3 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "12:30",
+              "uhrzeitbis": "13:45",
+              "dauer": 75
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Teil 2",
+            "struktur": "7 ungeb. Aufgaben, 0 Abwahl, à 10 Punkte = 70 Punkte dividiert durch Divisor 1,05 = 66,6 Punkte",
+            "termin": {
+              "datum": "02.12.2025",
+              "uhrzeitvon": "12:30",
+              "uhrzeitbis": "13:45",
+              "dauer": 75
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher, Zeichenwerkzeuge und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          }
+        ]
+      },
+      {
+        "name": "Teil A (Fertigkeitsprüfung)",
+        "aufgaben": [
+          {
+            "name": "Bereich a)",
+            "struktur": "Prüfling bearbeitet zwei Aufgaben; Gewichtung am Ergebnis 45%",
+            "termin": {
+              "datum": "13.01.2026",
+              "uhrzeitvon": "08:00",
+              "uhrzeitbis": "14:00",
+              "dauer": 360
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Bereich b)",
+            "struktur": "Prüfling bearbeitet zwei Aufgaben; Gewichtung am Ergebnis 45%",
+            "termin": {
+              "datum": "14.01.2026",
+              "uhrzeitvon": "08:00",
+              "uhrzeitbis": "14:00",
+              "dauer": 360
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Dokumentation",
+            "struktur": "Dokumentation der Prüfungsarbeit",
+            "termin": {
+              "datum": "14.01.2026",
+              "uhrzeitvon": "14:15",
+              "uhrzeitbis": "14:30",
+              "dauer": 15
+            },
+            "hilfmittel": "Formelsammlungen, Tabellenbücher und nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+          },
+          {
+            "name": "Fachgespräch",
+            "struktur": "Fachgespräch; Gewichtung am Ergebnis 10%",
+            "termin": {
+              "datum": "TBD",
+              "uhrzeitvon": "00:00",
+              "uhrzeitbis": "00:00",
+              "dauer": 15
+            },
+            "hilfmittel": "keine"
+          }
+        ]
+      }
+    ]
+  }
+}
