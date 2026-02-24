@@ -1,0 +1,27 @@
+{
+    "beruf": {
+        "beschreibung": "Eisenbahner/-in im Betriebsdienst Lokführer/-in und Transport",
+        "berufNr": [
+            4980,
+            4981
+        ],
+        "prüfungsBereich": [
+            {
+                "name": "Wirtschafts- und Sozialkunde",
+                "aufgaben": [
+                    {
+                        "name": "Schriftliche Aufgabenstellungen",
+                        "struktur": "18 geb. Aufgaben, 3 Abwahl, á 1 Punkt = 15 Punkte dividiert durch Divisor 0,375 = 40 Punkte",
+                        "termin": {
+                            "datum": "02.12.2025",
+                            "uhrzeitvon": "08: 00",
+                            "uhrzeitbis": "09: 00",
+                            "dauer": "60"
+                        },
+                        "hilfmittel": "Nicht programmierter, netzunabhängiger Taschenrechner ohne Kommunikationsmöglichkeit mit Dritten"
+                    }
+                ]
+            }
+        ]
+    }
+}
