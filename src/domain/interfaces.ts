@@ -1,25 +1,28 @@
 export interface Termin {
-  start: string;
-  ende: string;
+  readonly datum: string;
+  readonly uhrzeitvon: string;
+  readonly uhrzeitbis: string;
+  readonly dauer: number;
 }
 
 export interface Aufgabe {
-  nummer: number;
-  titel: string;
-  beschreibung: string;
-  punkte: number;
+  readonly name: string;
+  readonly struktur: string;
+  readonly termin: Termin;
+  readonly hilfmittel?: string;
 }
 
 export interface PruefungsBereich {
-  bezeichnung: string;
-  aufgaben: Aufgabe[];
-  gesamtpunkte: number;
+  readonly name: string;
+  readonly aufgaben: readonly Aufgabe[];
 }
 
 export interface Beruf {
-  name: string;
-  kennung: string;
-  pruefungsart: string;
-  termin: Termin;
-  bereiche: PruefungsBereich[];
+  readonly beschreibung: string;
+  readonly berufNr: readonly number[];
+  readonly pruefungsBereiche: readonly PruefungsBereich[];
 }
+
+export type BerufDocument = {
+  readonly beruf: Beruf;
+};

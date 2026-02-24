@@ -1,6 +1,6 @@
 # Spec: PDF-Ingestion und Normalisierung von Prüfungsdaten
 
-**Status:** In Progress  
+**Status:** Implemented  
 **Erstellt:** 2026-02-24  
 **Bereich:** `ingestion` / `normalization`  
 **Referenz:** [GitHub Issue #3](https://github.com/hmueller1/hackerton_gfi_2026/issues/3)
