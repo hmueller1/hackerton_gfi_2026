@@ -27,4 +27,8 @@ export class BerufRepository {
   async findById(id: string): Promise<BerufeDocument | null> {
     return this.model.findById(id).exec();
   }
+
+  async findByBerufNr(berufNr: number): Promise<BerufeDocument | null> {
+    return this.model.findOne({ 'beruf.berufNr': berufNr }).exec();
+  }
 }

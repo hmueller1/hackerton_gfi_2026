@@ -65,7 +65,10 @@ export class BerufApiService {
     if (vonDatum !== undefined) {
       validateVonDatum(vonDatum);
     }
-    const doc = await this.repository.findById(id);
+    const numericId = Number(id);
+    const doc = Number.isInteger(numericId) && !Number.isNaN(numericId) && String(numericId) === id
+      ? await this.repository.findByBerufNr(numericId)
+      : await this.repository.findById(id);
     if (doc === null) {
       throw new NotFoundException(`Beruf mit ID "${id}" nicht gefunden`);
     }

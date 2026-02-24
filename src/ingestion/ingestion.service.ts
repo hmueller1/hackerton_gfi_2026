@@ -18,7 +18,11 @@ export class IngestionService implements OnApplicationBootstrap {
     private readonly berufRepository: BerufRepository,
   ) {}
 
-  async onApplicationBootstrap(): Promise<void> {
+  onApplicationBootstrap(): void {
+    void this.runIngestion();
+  }
+
+  private async runIngestion(): Promise<void> {
     const pdfDir = this.config.get<string>('PDF_DIR', './doc/berufe/pages');
     const files = await readdir(pdfDir);
     const pdfFiles = files.filter((f) => f.endsWith('.pdf'));
