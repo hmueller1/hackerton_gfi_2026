@@ -1,7 +1,7 @@
 export interface Termin {
-  readonly datum: string;
-  readonly uhrzeitvon: string;
-  readonly uhrzeitbis: string;
+  readonly datum?: string;
+  readonly uhrzeitvon?: string;
+  readonly uhrzeitbis?: string;
   readonly dauer: number;
 }
 

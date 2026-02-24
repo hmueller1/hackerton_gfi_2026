@@ -17,11 +17,14 @@ const validateVonDatum = (vonDatum: string): void => {
   }
 };
 
-const filterBereiche = (bereiche: readonly PruefungsBereich[], vonDatum: string): readonly PruefungsBereich[] =>
+const filterBereiche = (
+  bereiche: readonly PruefungsBereich[],
+  vonDatum: string,
+): readonly PruefungsBereich[] =>
   bereiche
     .map((bereich) => ({
       ...bereich,
-      aufgaben: bereich.aufgaben.filter((aufgabe) => aufgabe.termin.datum >= vonDatum),
+      aufgaben: bereich.aufgaben.filter((aufgabe) => (aufgabe.termin.datum ?? '') >= vonDatum),
     }))
     .filter((bereich) => bereich.aufgaben.length > 0);
 
@@ -31,7 +34,10 @@ const toResponse = (doc: BerufeDocument): BerufApiResponse => ({
   beruf: doc.beruf,
 });
 
-const applyDateFilter = (responses: readonly BerufApiResponse[], vonDatum: string): readonly BerufApiResponse[] =>
+const applyDateFilter = (
+  responses: readonly BerufApiResponse[],
+  vonDatum: string,
+): readonly BerufApiResponse[] =>
   responses
     .map((r) => ({
       ...r,

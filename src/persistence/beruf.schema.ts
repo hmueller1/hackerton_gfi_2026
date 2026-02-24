@@ -7,9 +7,9 @@ export type BerufeDocument = BerufDocument & Document & { filename: string };
 
 const TerminSchema = new Schema(
   {
-    datum: { type: String, required: true },
-    uhrzeitvon: { type: String, required: true },
-    uhrzeitbis: { type: String, required: true },
+    datum: { type: String, required: false },
+    uhrzeitvon: { type: String, required: false },
+    uhrzeitbis: { type: String, required: false },
     dauer: { type: Number, required: true },
   },
   { _id: false },

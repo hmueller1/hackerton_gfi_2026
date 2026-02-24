@@ -25,6 +25,10 @@ HTTP-API-Layer (`GET /berufe`, `GET /berufe/:id`) implementiert und getestet. N�
 - `src/ingestion/ingestion.module.ts`: Importiert `PersistenceModule` + `ConfigModule`.
 
 ## Letzte Änderungen (aktuell)
+- Spec `deduplication-ingestion.md` implementiert → `done/` verschoben.
+- `src/ingestion/ingestion.service.ts`: Debug-Log `Skipping <filename>: already ingested` für übersprungene Dateien ergänzt.
+- `src/ingestion/ingestion.service.spec.ts`: 4 Unit-Tests (AC2, AC5 ×2, Happy Path) — alle grün.
+- `src/persistence/beruf.repository.spec.ts`: 2 Unit-Tests für `existsByFilename` (AC3) — alle grün.
 - `src/persistence/beruf.repository.ts`: `findAll()` und `findById()` ergänzt.
 - `src/api/beruf-api.service.ts` (neu): `BerufApiService` mit `findAll()`, `findById()`, `vonDatum`-Validierung (`YYYY-MM-DD`) und reiner Filterfunktion `filterBereiche()`.
 - `src/api/beruf-api.controller.ts` (neu): `@Controller('berufe')` mit `GET /berufe` und `GET /berufe/:id`.

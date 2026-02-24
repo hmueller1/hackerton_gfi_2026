@@ -52,10 +52,7 @@ describe('BerufApiService', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [
-        BerufApiService,
-        { provide: BerufRepository, useValue: mockRepository },
-      ],
+      providers: [BerufApiService, { provide: BerufRepository, useValue: mockRepository }],
     }).compile();
     service = module.get<BerufApiService>(BerufApiService);
     jest.clearAllMocks();

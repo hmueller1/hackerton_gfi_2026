@@ -27,7 +27,11 @@ const SYSTEM_PROMPT = `Du bist ein Datenextraktor. Extrahiere aus dem folgenden 
     ]
   }
 }
-Antworte NUR mit dem JSON-Objekt.`;
+Wichtige Regeln:
+- Antworte NUR mit dem JSON-Objekt, ohne Markdown-Codeblöcke oder sonstigen Text.
+- Das Feld "dauer" ist immer als Integer (Minuten) anzugeben.
+- Die Felder "datum", "uhrzeitvon" und "uhrzeitbis" sind NUR dann zu befüllen, wenn die entsprechenden Informationen explizit im Text stehen. Wenn sie nicht vorhanden sind, lass diese Felder vollständig weg — setze niemals leere Strings, null oder Platzhalter.
+- Das Feld "hilfmittel" ist optional und darf weggelassen werden.`;
 
 @Injectable()
 export class AiParserService {

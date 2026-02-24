@@ -33,7 +33,7 @@ const validate = ajv.compile({
                         uhrzeitbis: { type: 'string' },
                         dauer: { type: 'integer' },
                       },
-                      required: ['datum', 'uhrzeitvon', 'uhrzeitbis', 'dauer'],
+                      required: ['dauer'],
                       additionalProperties: false,
                     },
                     hilfmittel: { type: 'string' },

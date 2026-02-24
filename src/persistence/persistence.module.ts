@@ -3,6 +3,11 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { BERUFE_COLLECTION, BerufSchemaDefinition } from './beruf.schema';
 import { BerufRepository } from './beruf.repository';
+import {
+  FAILED_INGESTIONS_COLLECTION,
+  FailedIngestionSchemaDefinition,
+} from './failed-ingestion.schema';
+import { FailedIngestionRepository } from './failed-ingestion.repository';
 
 @Module({
   imports: [
@@ -16,10 +21,10 @@ import { BerufRepository } from './beruf.repository';
     }),
     MongooseModule.forFeature([
       { name: BERUFE_COLLECTION, schema: BerufSchemaDefinition },
+      { name: FAILED_INGESTIONS_COLLECTION, schema: FailedIngestionSchemaDefinition },
     ]),
   ],
-  providers: [BerufRepository],
-  exports: [BerufRepository],
+  providers: [BerufRepository, FailedIngestionRepository],
+  exports: [BerufRepository, FailedIngestionRepository],
 })
 export class PersistenceModule {}
-

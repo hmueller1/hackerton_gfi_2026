@@ -27,7 +27,10 @@ export class IngestionService implements OnApplicationBootstrap {
       const filename = basename(file);
       try {
         const exists = await this.berufRepository.existsByFilename(filename);
-        if (exists) continue;
+        if (exists) {
+          this.logger.debug(`Skipping ${filename}: already ingested`);
+          continue;
+        }
 
         const fullPath = join(pdfDir, file);
         const rawText = await this.pdfReader.extractText(fullPath);
